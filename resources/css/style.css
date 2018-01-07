@@ -1,0 +1,533 @@
+
+/* Format HTML level elements */
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #D6DBDE;
+  color: #535353;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Format h1 elements */
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+/* Format h2 elements */
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h3 {
+  color: #3B3C3D;
+  font-weight: bold;
+}
+
+/* Format the page container */
+.page {
+  max-width: 1050px;
+  margin: 0 auto;
+  background-color: #D6DBDE;
+}
+
+/* ---------------------------------------------- Header ------------------------------------------ */
+
+/* Hide mobile header */
+.mobile-header {
+  display: none;
+}
+
+/* Make the desktop header a flex container */
+.desktop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 24px;
+}
+
+/* Format logo container */
+.full-logo {
+  height: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* Display nav items inline */
+nav li {
+  display: inline-block;
+  margin-left: 16px;
+}
+
+/* Change color of header a tags */
+header a {
+  color: #535353;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  text-decoration: underline;
+  color: #53C4AB;
+}
+
+/* Goes along with code to put underline under aside links */
+.article a::after {
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #3B3C3D;
+  transition: width 0.3s;
+}
+
+.article a:hover {
+  font-size: 1.07rem;
+}
+
+/* Make li bold when hovered over */
+
+header a:hover::after {
+    width: 100%;
+}
+
+/* Format logo-text */
+.logo-text {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+  display: flex;
+}
+
+/* Color second span in logo text */
+.logo-text span:last-child {
+  color: #53C4AB;
+}
+
+.logo-text span:first-child {
+  color: #FFFFFF;
+}
+
+/* ---------------------------------------------- Common Body Styling ----------------------------- */
+
+/* Format all split section containers */
+.split {
+  padding: 32px 0 32px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Format left content of split containers */
+.left-content {
+  width: 60%;
+}
+
+/* Format banner img container */
+.main-media-container {
+  height: auto;
+  overflow: hidden;
+}
+
+/* Format banner-img */
+.main-media-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Format aside container */
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 24px;
+}
+
+/* Format articles inside aside */
+.article {
+  display: flex;
+  padding: 16px;
+}
+
+/* Format articl image container */
+.aside-img-container {
+  width: 35%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Format article imges inside container */
+.aside-img-container img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Format the aside text */
+.aside-txt {
+  width: 65%;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* format p elements inside aside */
+aside p {
+  margin: 8px 0;
+}
+
+/* Format section backgrounds */
+.page section:nth-child(2n+2) {
+  background-color: #A3D7CB;
+}
+
+.article.color {
+  background-color: #53C4AB;
+}
+
+/* Had to be here to make linter happy */
+
+/* Formats a elements in footer */
+footer a {
+  color: #535353;
+}
+footer a:hover {
+  color: #53C4AB;
+  text-decoration: underline;
+}
+
+
+/* Format asside a elements */
+.article a {
+  width: 84px;
+  color: #3B3C3D;
+  font-weight: bold;
+}
+
+.article a:hover::after {
+  width: 100%;
+}
+
+/* ---------------------------------------------- Banner Section ---------------------------------- */
+
+/* Format outer banner text container */
+.banner {
+  align-items: center;
+}
+
+/* Format banner-text */
+.banner-text {
+  padding: 16px;
+  padding-right: 20%;
+}
+
+/* Format banner p text */
+.banner-text p {
+  font-size: 1.3rem;
+}
+
+/* Format the start here button */
+#start-button {
+  border-radius: 8px;
+  text-align: center;
+  display: block;
+  padding: 16px;
+  background-color: #3B3C3D;
+  color: #53C4AB;
+  margin-top: 16px;
+  box-shadow: 3px 3px 5px 2px #13353d;
+  text-decoration: none;
+}
+#start-button:hover {
+  background-color: #53C4AB;
+  color: #3B3C3D;
+}
+
+/* ---------------------------------------------- Articles ---------------------------------------- */
+
+/* Hide mobile images */
+img.mobile-article-img {
+  display: none;
+}
+
+/* Format lead article h1 spacing */
+.lead h1 {
+  margin-top: 32px;
+}
+
+.lead p:first-of-type {
+  margin: 24px 0;
+}
+
+/* ---------------------------------------------- Classes Section --------------------------------- */
+
+/* Format classes section */
+.classes-section {
+  padding: 0 56px 16px 56px;
+}
+
+/* Format section title */
+.section-title.learning {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  margin: 0;
+}
+
+div.classes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Format images */
+.class img {
+  width: 100%;
+  height: auto;
+}
+
+/* Format each class container */
+.class {
+  flex-basis: 29%;
+  margin: 16px;
+  background-color: #efefef;
+  box-shadow: 5px 5px 5px 2px #13353d;
+}
+
+/* Format class text */
+.class-txt {
+  padding: 16px;
+}
+
+/* ---------------------------------------------- Exhibit Section --------------------------------- */
+
+/* Format section title */
+.section-title.exhibits {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+
+/* Format the title under the video */
+.exhibit-title {
+  margin: 24px 0 8px 0;
+}
+
+/* ---------------------------------------------- Footer ------------------------------------------ */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px 36px 24px;
+}
+
+.footer-links a {
+  margin-left: 5px;
+}
+
+.footer-icon {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------- Tablet Styling ---------------------------------- */
+@media only screen and (max-width: 850px) {
+  /* ------------------- Header ----------------- */
+  .mobile-header {
+    display: none;
+  }
+
+  /* Shrink header margins */
+  nav li {
+    margin-left: 8px;
+  }
+
+  /* Change margins for class section */
+  .classes-section {
+    padding: 0 0 36px;
+  }
+
+  .class {
+    margin: 10px;
+  }
+}
+
+/* ---------------------------------------------- Mobile Styling ---------------------------------- */
+@media only screen and (max-width: 750px) {
+  /* Format page container */
+  .page {
+    width: 100%;
+  }
+
+  /* ------------------- Header ----------------- */
+
+  /* Hide desktop header */
+  .desktop-header {
+    display: none;
+  }
+
+  /* Format mobile header */
+  .mobile-header {
+    display: flex;
+    justify-content: space-around;
+    height: 64px;
+  }
+
+  /* ------------------- Banner ----------------- */
+
+  /* Format banner container */
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* Make banner image the width of the page */
+  .left-content {
+    width: 100%;
+  }
+
+  /* Format aside sections */
+  aside {
+    width: 100%;
+  }
+
+  .outer-banner-text {
+    margin: 0;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* Format banner-text */
+  .banner-text {
+    padding: 0 16px 32px 16px;
+  }
+
+  /* ------------------- Articles --------------- */
+
+  /* Format articles section */
+  .articles {
+    padding: 16px 16px 32px 16px;
+  }
+
+  /* Hide left content for articles */
+  .articles .left-content {
+    display: none;
+  }
+
+  /* Format margins for top articles section */
+  .top-articles {
+    margin: 0;
+  }
+
+  /* Format individual articles */
+  .article {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  /* Format the article image containers */
+  .aside-img-container {
+    width: 100%;
+  }
+
+  /* Format the aside article text containers */
+  .aside-txt {
+    padding: 16px;
+  }
+
+  /* Hide the desktop article images */
+  img.desktop-article-img {
+    display: none;
+  }
+
+  /* Display the mobile article images */
+  img.mobile-article-img {
+    display: block;
+  }
+
+  /* Remove the background color from the last article */
+  .article.color {
+    background-color: inherit;
+  }
+
+  /* ------------------- Classes Section -------- */
+
+  /* Hide class images */
+  .class img {
+    display: none;
+  }
+
+  /* Hide p elements in classes */
+  .class p {
+    display: none;
+  }
+
+  /* Format the class section container */
+  .classes-section {
+    padding: 0 16px 32px 16px;
+  }
+
+  /* Format the classes section */
+  .classes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Format the class-txt container */
+  .class-txt {
+    padding: 0 16px;
+  }
+
+  /* Format the individual class margins */
+  .class {
+    margin: 8px;
+  }
+
+  /* ------------------- Exhibit Section -------- */
+
+  /* Hide aside container */
+  .exhibit-container aside {
+    display: none;
+  }
+
+  /* Format exhibit section container */
+  .exhibit-container {
+    padding: 16px 16px 32px 16px;
+  }
+
+  /* Remove padding from video container */
+  .main-media-container {
+    padding: 0;
+  }
+
+  /* ------------------- Footer ----------------- */
+
+  /* Format footer container */
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .copyright {
+    margin-bottom: 8px;
+  }
+}
